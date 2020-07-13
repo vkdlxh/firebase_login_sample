@@ -1,12 +1,12 @@
-package co.jp.archivce_asia.firebaseloginsample.ui.front
+package jp.co.archivce_asia.firebaseloginsample.ui.front
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import co.jp.archivce_asia.firebaseloginsample.BaseActivity
-import co.jp.archivce_asia.firebaseloginsample.R
-import co.jp.archivce_asia.firebaseloginsample.databinding.ActivityFrontBinding
-import co.jp.archivce_asia.firebaseloginsample.ui.login.LoginFragment
+import jp.co.archivce_asia.firebaseloginsample.BaseActivity
+import jp.co.archivce_asia.firebaseloginsample.R
+import jp.co.archivce_asia.firebaseloginsample.databinding.ActivityFrontBinding
+import jp.co.archivce_asia.firebaseloginsample.ui.login.LoginFragment
 
 class FrontActivity : BaseActivity() {
 

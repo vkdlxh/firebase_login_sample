@@ -1,4 +1,4 @@
-package co.jp.archivce_asia.firebaseloginsample
+package jp.co.archivce_asia.firebaseloginsample
 
 import android.os.Bundle
 import android.view.LayoutInflater

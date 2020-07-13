@@ -1,11 +1,11 @@
-package co.jp.archivce_asia.firebaseloginsample.ui.home
+package jp.co.archivce_asia.firebaseloginsample.ui.home
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import co.jp.archivce_asia.firebaseloginsample.BaseActivity
-import co.jp.archivce_asia.firebaseloginsample.databinding.ActivityHomeBinding
-import co.jp.archivce_asia.firebaseloginsample.ui.front.FrontActivity
+import jp.co.archivce_asia.firebaseloginsample.BaseActivity
+import jp.co.archivce_asia.firebaseloginsample.databinding.ActivityHomeBinding
+import jp.co.archivce_asia.firebaseloginsample.ui.front.FrontActivity
 
 class HomeActivity : BaseActivity() {
 

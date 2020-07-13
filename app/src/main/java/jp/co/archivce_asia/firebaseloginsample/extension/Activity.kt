@@ -1,4 +1,4 @@
-package co.jp.archivce_asia.firebaseloginsample.extension
+package jp.co.archivce_asia.firebaseloginsample.extension
 
 import android.app.Activity
 import android.view.View

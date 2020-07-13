@@ -1,14 +1,14 @@
-package co.jp.archivce_asia.firebaseloginsample.ui.signUp
+package jp.co.archivce_asia.firebaseloginsample.ui.signUp
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import co.jp.archivce_asia.firebaseloginsample.BaseFragment
-import co.jp.archivce_asia.firebaseloginsample.databinding.FragmentSignUpBinding
-import co.jp.archivce_asia.firebaseloginsample.extension.isEmailFormat
-import co.jp.archivce_asia.firebaseloginsample.extension.showSnackBar
-import co.jp.archivce_asia.firebaseloginsample.ui.home.HomeActivity
+import jp.co.archivce_asia.firebaseloginsample.BaseFragment
+import jp.co.archivce_asia.firebaseloginsample.databinding.FragmentSignUpBinding
+import jp.co.archivce_asia.firebaseloginsample.extension.isEmailFormat
+import jp.co.archivce_asia.firebaseloginsample.extension.showSnackBar
+import jp.co.archivce_asia.firebaseloginsample.ui.home.HomeActivity
 
 class SignUpFragment : BaseFragment<FragmentSignUpBinding>() {
 

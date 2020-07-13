@@ -1,13 +1,13 @@
-package co.jp.archivce_asia.firebaseloginsample.ui.resetPassword
+package jp.co.archivce_asia.firebaseloginsample.ui.resetPassword
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import co.jp.archivce_asia.firebaseloginsample.BaseFragment
-import co.jp.archivce_asia.firebaseloginsample.databinding.FragmentResetPasswordBinding
-import co.jp.archivce_asia.firebaseloginsample.extension.isEmailFormat
-import co.jp.archivce_asia.firebaseloginsample.extension.showSnackBar
+import jp.co.archivce_asia.firebaseloginsample.BaseFragment
+import jp.co.archivce_asia.firebaseloginsample.databinding.FragmentResetPasswordBinding
+import jp.co.archivce_asia.firebaseloginsample.extension.isEmailFormat
+import jp.co.archivce_asia.firebaseloginsample.extension.showSnackBar
 
 class ResetPasswordFragment : BaseFragment<FragmentResetPasswordBinding>() {
 
