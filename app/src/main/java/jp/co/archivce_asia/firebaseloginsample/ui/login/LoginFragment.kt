@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.auth.FirebaseAuth
 import jp.co.archivce_asia.firebaseloginsample.BaseFragment
 import jp.co.archivce_asia.firebaseloginsample.R
 import jp.co.archivce_asia.firebaseloginsample.databinding.FragmentLoginBinding
@@ -45,7 +46,16 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>() {
     }
 
     private fun login(email: String, password: String) {
-        navigateToHome()
+        FirebaseAuth
+            .getInstance()
+            .signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    navigateToHome()
+                } else {
+                    showSnackBar(task.exception?.localizedMessage ?: "Error")
+                }
+            }
     }
 
     private fun navigateToHome() {

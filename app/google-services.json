@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "422607766897",
+    "firebase_url": "https://fir-loginsample-2d521.firebaseio.com",
+    "project_id": "fir-loginsample-2d521",
+    "storage_bucket": "fir-loginsample-2d521.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422607766897:android:fa7f954d6c03b30476e2d0",
+        "android_client_info": {
+          "package_name": "jp.co.archivce_asia.firebaseloginsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422607766897-9lvvact3b5gqmp97upogccnlqeokhds0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPEmcTvxrZe-HNFvwn3b8sAXBelEOrK_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422607766897-9lvvact3b5gqmp97upogccnlqeokhds0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

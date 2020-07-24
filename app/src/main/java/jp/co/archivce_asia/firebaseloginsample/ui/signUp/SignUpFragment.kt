@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.auth.FirebaseAuth
 import jp.co.archivce_asia.firebaseloginsample.BaseFragment
 import jp.co.archivce_asia.firebaseloginsample.databinding.FragmentSignUpBinding
 import jp.co.archivce_asia.firebaseloginsample.extension.isEmailFormat
@@ -36,7 +37,7 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding>() {
             showSnackBar("PLEASE CHECK EMAIL")
         } else if (password.length < MIN_PASSWORD_LENGTH) {
             showSnackBar("PLEASE CHECK PASSWORD")
-        } else if (name.isEmpty()){
+        } else if (name.isEmpty()) {
             showSnackBar("PLEASE CHECK NAME")
         } else {
             signUp(email, password, name)
@@ -44,7 +45,25 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding>() {
     }
 
     private fun signUp(email: String, password: String, name: String) {
-        navigateToHome()
+        FirebaseAuth
+            .getInstance()
+            .createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    navigateToHome()
+                } else {
+                    showSnackBar(task.exception?.localizedMessage ?: "Error")
+                }
+            }
+
+//        FirebaseAuth
+//            .getInstance()
+//            .createUserWithEmailAndPassword(email, password)
+//            .addOnSuccessListener {
+//                navigateToHome()
+//            }.addOnFailureListener {
+//                showSnackBar(it.localizedMessage ?: "Error")
+//            }
     }
 
     private fun navigateToHome() {
