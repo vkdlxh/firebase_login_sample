@@ -8,7 +8,8 @@ import jp.co.archivce_asia.firebaseloginsample.R
 import jp.co.archivce_asia.firebaseloginsample.databinding.ActivityFrontBinding
 import jp.co.archivce_asia.firebaseloginsample.ui.login.LoginFragment
 
-class FrontActivity : BaseActivity() {
+class
+FrontActivity : BaseActivity() {
 
     private lateinit var binding: ActivityFrontBinding
 
